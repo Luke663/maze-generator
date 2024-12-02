@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+}
+
+#canvas1 {
+    background: #333;
+    height: 100%;
+    width: 100%;
+}
+
+.toolbar {
+    top: 0px;
+    left: 0px;
+    height: auto;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.UIelement {
+    padding-left: 10px;
+    display: flex;
+    gap: 10px;
+    max-width: 400px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.UIelement input[type="number"], select {
+    flex: 1 1 45%;
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.UIelement input[type="checkbox"] {
+    flex: 0 0 auto;
+    width: auto;
+}
+
+.generate-container {
+    margin-left: auto;
+}
+
+.generate-container button {
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background: rgb(122, 228, 162);
+    border-radius: 5px;
+}

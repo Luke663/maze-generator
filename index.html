@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mazes</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Toolbar / controls -->
+        <div class="toolbar" id="toolbar">
+            <!-- Background colour dropdown -->
+            <div class="UIelement">
+                <label for="backgroundcolour">Background:</label>
+                <select id="backgroundcolour">
+                    <option value="#333">Charcoal</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="burlywood">Burlywood</option>
+                    <option value="mediumseagreen">Medium sea green</option>
+                    <option value="olivedrab">Olive drab</option>
+                    <option value="lightblue">Light blue</option>
+                    <option value="teal">Teal</option>
+                    <option value="thistle">Thistle</option>
+                    <option value="lightcoral">Light coral</option>
+                    <option value="firebrick">Firebrick</option>
+                </select>
+            </div>
+
+            <!-- Foreground colour dropdown -->
+            <div class="UIelement">
+                <label for="foregroundcolour">Walls:</label>
+                <select id="foregroundcolour">
+                    <option value="white">White</option>
+                    <option value="black">Black</option>
+                    <option value="#333">Charcoal</option>
+                    <option value="steelblue">Steel blue</option>
+                    <option value="olivedrab">Olive drab</option>
+                    <option value="red">Red</option>
+                    <option value="mediumblue">Medium blue</option>
+                    <option value="lime">Lime</option>
+                    <option value="indigo">Indigo</option>
+                    <option value="burlywood">Burlywood</option>
+                    <option value="cornflowerblue">Cornflower blue</option>
+                </select>
+            </div>
+
+            <!-- solution colour dropdown -->
+            <div class="UIelement">
+                <label for="solutioncolour">Solution:</label>
+                <select id="solutioncolour">
+                    <option value="springgreen">Spring Green</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="lime">Lime</option>
+                    <option value="red">Red</option>
+                    <option value="orange">Orange</option>
+                    <option value="fuchsia">Fuchsia</option>
+                    <option value="aqua">Aqua</option>
+                </select>
+            </div>
+
+            <!-- Specify columns input -->
+            <div class="UIelement">
+                <label for="colInput">Number of columns:</label>
+                <input id="colInput" type="number" value="50"/>
+            </div>
+
+            <!-- Solve maze / not checkbox -->
+            <div class="UIelement">
+                <label for="findSolution">Solve maze:</label>
+                <input id="findSolution" type="checkbox" checked/>
+            </div>
+
+            <!-- Generate maze button -->
+            <div class="generate-container">
+                <button id="generateButton">Generate Maze</button>
+            </div>
+        </div>
+
+        <!-- Canvas -->
+        <canvas id="canvas1"></canvas>
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
